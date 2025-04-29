@@ -124,4 +124,83 @@ li:hover {
   .contact-icons a img:hover {
     transform: scale(1.1);
   }
-  
+  @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .center-wrapper,
+    .content-section,
+    .programming-languages,
+    .web-technologies,
+    .tools-platforms,
+    .projects,
+    .contact,
+    .consultation {
+        padding: 15px;
+    }
+
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-content img {
+        width: 90%;
+        height: auto;
+    }
+
+    .language-grid,
+    .technology-grid,
+    .tools-grid,
+    .projects-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .icon-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    table {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    td input[type="text"],
+    td input[type="number"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project {
+        width: 100%;
+        text-align: center;
+    }
+
+    .consultation-content {
+        text-align: justify;
+    }
+  }
