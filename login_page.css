@@ -421,3 +421,65 @@ input[type="reset"]:hover {
       font-size: 16px;
   }
 }
+/* Basic Navigation Bar Styles */
+nav {
+  background-color: #dfe6e9;
+  color: #2c3e50;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+li:hover {
+  color: #000000;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+/* Hamburger Menu */
+#hamburger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Mobile View: Adjustments for Hamburger Menu */
+@media (max-width: 768px) {
+  #menu {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  #menu li {
+    margin: 10px 0;
+  }
+
+  #hamburger-menu {
+    display: block;
+  }
+
+  #menu.show {
+    display: block;
+  }
+}
